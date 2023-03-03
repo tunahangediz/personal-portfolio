@@ -4,3 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"); /* :root {
   background-color: #eaeaea;
 } */
+
+@layer base {
+  body {
+    @apply dark:bg-[#0b1025] bg-white;
+  }
+  p {
+    @apply dark:text-gray-400;
+  }
+}

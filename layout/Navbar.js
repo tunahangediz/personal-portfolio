@@ -1,6 +1,25 @@
+import { moon, sun } from "@/data/themeSvg";
+import Button from "@/UI/Button";
 import H1 from "@/UI/H1";
+import { useTheme } from "next-themes";
 
 function Navbar() {
+  const { theme, setTheme } = useTheme();
+  const changeTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
+
+  const renderThemeChanger = () => {
+    return theme == "dark" ? (
+      <Button onClick={changeTheme}>{moon}</Button>
+    ) : (
+      <Button onClick={changeTheme}>{sun}</Button>
+    );
+  };
   return (
     <header className=" w-full flex justify-between sm:mt-16 mt-6">
       <div className="flex gap-6 items-center">
@@ -14,7 +33,7 @@ function Navbar() {
       <nav>
         <ul className="flex gap-4">
           <li>Blog</li>
-          <li>Light/Dark Theme</li>
+          <li>{renderThemeChanger()}</li>
         </ul>
       </nav>
     </header>
