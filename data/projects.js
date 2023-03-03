@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "MovieApp",
     description:
-      "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda",
+      "A react application that shows weekly trending movies and you can create your favorite list.",
     image: "/images/movieapp.png",
   },
   {
