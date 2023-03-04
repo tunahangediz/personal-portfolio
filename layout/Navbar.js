@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   const renderThemeChanger = () => {
-    return theme == "light" ? (
+    return theme == "dark" ? (
       <Button onClick={changeTheme}>
         {
           <svg
