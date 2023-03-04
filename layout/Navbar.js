@@ -66,7 +66,7 @@ function Navbar() {
       </div>
       <nav>
         <ul className="flex gap-4">
-          <li>Blog</li>
+          <li className="line-through text-gray-500">Blog</li>
           <li>{renderThemeChanger()}</li>
         </ul>
       </nav>

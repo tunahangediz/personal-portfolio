@@ -5,19 +5,21 @@ export const projects = [
     description:
       "A react application that shows weekly trending movies and you can create your favorite list.",
     image: "/images/movieapp.png",
+    technologies: ["React.js", "Tailwindcss", "firebase"],
   },
   {
     id: 2,
     title: "Digital Bussines Card",
-    description:
-      "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda",
+    description: "Dijital bussines card creation app, still under development.",
+    technologies: ["React.js", "Tailwindcss", "firebase"],
     image: "/images/digital-bussines-card.png",
   },
   {
     id: 3,
     title: "Reddit style comment and reply system",
     description:
-      "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda",
+      "A system where users can log in and write comments and replies like mini-reddit",
     image: "/images/reddit.png",
+    technologies: ["React.js", "Tailwindcss", "firebase"],
   },
 ];

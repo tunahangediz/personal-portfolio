@@ -2,6 +2,7 @@ import { projects } from "@/data/projects";
 import H2 from "@/UI/H2";
 import Image from "next/image";
 import React from "react";
+import Tag from "./Tag";
 
 function Projects() {
   return (
@@ -20,9 +21,16 @@ function Projects() {
               />
             </div>
 
-            <div className="sm:w-[80%]">
-              <h3 className="text-lg font-medium mb-4 ">{project.title}</h3>
-              <p className=" text-gray-800  leading-6">{project.description}</p>
+            <div className="sm:w-[80%] flex flex-col gap-8 ">
+              <div>
+                <h3 className="text-lg font-medium mb-4 ">{project.title}</h3>
+                <p className="  leading-6">{project.description}</p>
+              </div>
+              <div className="flex gap-2">
+                {project.technologies.map((tech) => (
+                  <Tag>{tech}</Tag>
+                ))}
+              </div>
             </div>
           </div>
         ))}
