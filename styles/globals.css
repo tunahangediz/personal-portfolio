@@ -13,3 +13,7 @@
     @apply dark:text-gray-400;
   }
 }
+
+:root {
+  font-size: large;
+}
