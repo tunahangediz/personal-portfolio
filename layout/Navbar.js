@@ -2,9 +2,14 @@ import { moon, sun } from "@/data/themeSvg";
 import Button from "@/UI/Button";
 import H1 from "@/UI/H1";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 function Navbar() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
   const changeTheme = () => {
     if (theme === "dark") {
       setTheme("light");
@@ -14,7 +19,9 @@ function Navbar() {
   };
 
   const renderThemeChanger = () => {
-    return theme == "dark" ? (
+    if (!mounted) return null;
+
+    return theme == "light" ? (
       <Button onClick={changeTheme}>
         {
           <svg
