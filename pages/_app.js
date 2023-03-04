@@ -4,7 +4,7 @@ import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider defaultTheme="dark" attribute="class">
       <Layout>
         <Component {...pageProps} />
       </Layout>

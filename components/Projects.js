@@ -9,16 +9,19 @@ function Projects() {
     <div>
       <H2>Projects</H2>
       {/* <div className="grid sm:grid-cols-2 gap-4 sm:gap-14 pb-12  mt-4 "> */}
-      <div className="">
+      <div className="flex flex-col ">
         {projects.map((project) => (
-          <div className="flex  my-4 gap-4 flex-wrap sm:flex-nowrap ">
-            <div className="  ">
+          <div className="flex my-4 gap-4 flex-wrap sm:flex-nowrap ">
+            <div className="group relative">
               <Image
                 src={project.image}
                 width={600}
                 height={200}
                 className="rounded"
               />
+              <div className=" group-hover:block absolute  bottom-4 left-4">
+                DGASDGSD
+              </div>
             </div>
 
             <div className="sm:w-[80%] flex flex-col gap-8 ">
