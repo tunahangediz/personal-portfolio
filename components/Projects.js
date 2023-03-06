@@ -11,27 +11,31 @@ function Projects() {
       {/* <div className="grid sm:grid-cols-2 gap-4 sm:gap-14 pb-12  mt-4 "> */}
       <div className="flex flex-col ">
         {projects.map((project) => (
-          <div className="flex my-4 gap-4 flex-wrap sm:flex-nowrap ">
+          <div
+            key={project.id}
+            className="flex my-4 gap-4 flex-wrap sm:flex-nowrap "
+          >
             <div className="group relative">
               <Image
                 src={project.image}
                 width={600}
                 height={200}
                 className="rounded"
+                alt={project.title}
               />
               <div className=" group-hover:block absolute  bottom-4 left-4">
                 DGASDGSD
               </div>
             </div>
 
-            <div className="sm:w-[80%] flex flex-col gap-8 ">
+            <div className="sm:w-[80%] flex flex-col gap-4 ">
               <div>
                 <h3 className="text-lg font-medium mb-4 ">{project.title}</h3>
-                <p className="  leading-6">{project.description}</p>
+                <p className="leading-6">{project.description}</p>
               </div>
               <div className="flex gap-2">
                 {project.technologies.map((tech) => (
-                  <Tag>{tech}</Tag>
+                  <Tag key={tech}>{tech}</Tag>
                 ))}
               </div>
             </div>

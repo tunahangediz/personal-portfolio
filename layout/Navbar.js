@@ -2,6 +2,7 @@ import { moon, sun } from "@/data/themeSvg";
 import Button from "@/UI/Button";
 import H1 from "@/UI/H1";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -66,14 +67,17 @@ function Navbar() {
       <div className="flex gap-6 items-center">
         {/* Profile */}
         {/* <div className=" w-14 h-14 bg-red-600"></div> */}
-        <div>
-          <H1>Tunahan Gediz</H1>
+        <Link href="/">
+          <H1 className="right-1">Tunahan Gediz</H1>
           <h2 className="text-[#888888]">Frontend Developer</h2>
-        </div>
+        </Link>
       </div>
       <nav>
         <ul className="flex gap-4">
-          <li className="line-through text-gray-500">Blog</li>
+          <li className="">
+            {" "}
+            <Link href="/blog"> Blog </Link>
+          </li>
           <li>{renderThemeChanger()}</li>
         </ul>
       </nav>
