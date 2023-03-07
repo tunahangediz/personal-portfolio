@@ -1,30 +1,20 @@
-import SyntaxHighlighter from "@/components/SyntaxHighlighter";
+import MDXComponents from "@/components/mdx components/MDXComponents";
+import syntaxHighlighter from "@/components/mdx components/syntaxHighlighter";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
+import H1 from "@/UI/H1";
+import H2 from "@/UI/H2";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 
 export default function Post({ slug, frontmatter, code }) {
-  //   console.log(code);
   const Component = useMemo(() => getMDXComponent(code), [code]);
-  const exampleCode = `
-  (function someDemo() {
-    var test = "Hello World!";
-    console.log(test);
-  })();
-  
-  return () => <App />;
-  `;
+
   return (
-    <div>
+    <div className="mt-12">
       <Component
         components={{
-          pre: ({ children, className }) => {
-            return (
-              <SyntaxHighlighter className={className}>
-                {children}
-              </SyntaxHighlighter>
-            );
-          },
+          pre: syntaxHighlighter,
+          ...MDXComponents,
         }}
       />
 

@@ -1,23 +1,32 @@
 import { getBlogPostData } from "@/lib/posts";
 import H1 from "@/UI/H1";
+import H2 from "@/UI/H2";
 import Link from "next/link";
 
 export default function BlogPosts({ allPostsData }) {
   console.log(allPostsData);
   return (
-    <div>
-      BlogPosts
-      <div>
+    <>
+      <div className="flex flex-col gap-6 mt-12 ">
         {allPostsData.map((data) => (
-          <div key={data.slug}>
-            <Link href={`blog/${data.slug}`}>
-              <H1>{data.slug} </H1>
-            </Link>
+          <Link href={`blog/${data.slug}`} className="group max-w-lg">
+            <H2 className="text-[24px]  group-hover:text-[#6f8dfb]">
+              {data.slug}{" "}
+            </H2>
+
             <p>{data.description}</p>
-          </div>
+            <div className="mt-2">
+              <span className="text-[14px] font-medium text-gray-200">
+                Read more
+                <span className="group-hover:text-[#6f8dfb] text-sm pl-1 relative top-[2.5px] ">
+                  →
+                </span>
+              </span>
+            </div>
+          </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 
