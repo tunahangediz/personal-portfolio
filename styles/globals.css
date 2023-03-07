@@ -12,8 +12,11 @@
   p {
     @apply dark:text-gray-400;
   }
+  :root {
+    @apply sm:text-lg;
+  }
 }
 
-:root {
+/* :root {
   font-size: large;
-}
+} */

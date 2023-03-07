@@ -5,7 +5,7 @@ function Button({ children, className, onClick }) {
     <button
       onClick={onClick}
       className={classNames(
-        "bg-gray-200  p-2 rounded-md hover:border-red-600 hover:ring-2 hover:ring-gray-300",
+        "bg-gray-300/40 dark:bg-gray-200  p-2 rounded-md hover:border-red-600 hover:ring-2 hover:ring-gray-300",
         className
       )}
     >

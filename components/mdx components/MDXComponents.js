@@ -8,7 +8,10 @@ const MDXComponents = {
   h5: (props) => <h2 {...props} className="text-medium font-medium my-4" />,
   h6: (props) => <h2 {...props} className="text-normal font-medium my-4" />,
   ul: (props) => <ul {...props} className="list-disc pl-6 my-4" />,
-  ol: (props) => <ul {...props} className="list-decimal pl-6 my-4" />,
+  ol: (props) => <ol {...props} className="list-decimal pl-6 my-4" />,
+  hr: (props) => (
+    <hr {...props} className="border-[#e8eafd] dark:border-[#3c448a] my-4" />
+  ),
 
   del: (props) => (
     <del {...props} className="line-through">
