@@ -4,16 +4,22 @@ import dracula from "prism-react-renderer/themes/dracula";
 
 function SyntaxHighlighter({ children, className }) {
   const code = children.props.children;
+  const language = children.props?.className?.replace("language-", " ");
 
   return (
     <Highlight {...defaultProps} code={code} language="jsx" theme={dracula}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <div className="my-2">
-          <div className="bg-red-500">fdsf</div>
+        <div className="my-4">
+          {language && (
+            <div className="bg-[#161f2b] flex justify-end p-2 px-4 rounded-t-lg">
+              <p className="text-gray-300">{language}</p>
+            </div>
+          )}
           <pre
             className={classNames(
-              "overflow-auto p-4 text-xs rounded",
-              className
+              "overflow-auto p-4 text-xs rounded-b-lg",
+              className,
+              !language && "rounded-lg"
             )}
             style={style}
           >

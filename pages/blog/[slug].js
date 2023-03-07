@@ -1,8 +1,7 @@
 import MDXComponents from "@/components/mdx components/MDXComponents";
 import syntaxHighlighter from "@/components/mdx components/syntaxHighlighter";
+import TableComponent from "@/components/mdx components/TableComponent";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
-import H1 from "@/UI/H1";
-import H2 from "@/UI/H2";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 
@@ -15,6 +14,8 @@ export default function Post({ slug, frontmatter, code }) {
         components={{
           pre: syntaxHighlighter,
           ...MDXComponents,
+          //table is return as a p tag
+          // table: ??
         }}
       />
 

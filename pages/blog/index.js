@@ -16,7 +16,7 @@ export default function BlogPosts({ allPostsData }) {
 
             <p>{data.description}</p>
             <div className="mt-2">
-              <span className="text-[14px] font-medium text-gray-200">
+              <span className="text-[14px] font-medium dark:text-gray-200">
                 Read more
                 <span className="group-hover:text-[#6f8dfb] text-sm pl-1 relative top-[2.5px] ">
                   →
