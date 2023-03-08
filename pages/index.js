@@ -5,8 +5,7 @@ import styles from "@/styles/Home.module.css";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-
-const inter = Inter({ subsets: ["latin"] });
+import "remixicon/fonts/remixicon.css";
 
 export default function Home() {
   return (
