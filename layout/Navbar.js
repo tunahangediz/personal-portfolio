@@ -63,7 +63,7 @@ function Navbar() {
     );
   };
   return (
-    <header className=" w-full flex justify-between sm:mt-16 mt-6">
+    <header className=" w-full flex justify-between sm:mt-16 mt-6 ">
       <div className="flex gap-6 items-center">
         {/* Profile */}
         {/* <div className=" w-14 h-14 bg-red-600"></div> */}

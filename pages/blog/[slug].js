@@ -1,9 +1,10 @@
 import MDXComponents from "@/components/mdx components/MDXComponents";
 import syntaxHighlighter from "@/components/mdx components/syntaxHighlighter";
-import TableComponent from "@/components/mdx components/TableComponent";
+import PostPageNavigation from "@/components/PostPageNavigation";
+import ViewCounter from "@/components/ViewCounter";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 import { getMDXComponent } from "mdx-bundler/client";
-import Link from "next/link";
+
 import { useMemo } from "react";
 
 export default function Post({ slug, frontmatter, code }) {
@@ -11,15 +12,9 @@ export default function Post({ slug, frontmatter, code }) {
 
   return (
     <div className="mt-8">
-      <div className="rounded text-[#6F8DFB]  dark:bg-[#191c3c] mb-8 font-medium text-xs bg-gray-100  p-2 relative right-2">
-        <Link className="hover:text-[#f6f6f9]" href="/">
-          Home
-        </Link>{" "}
-        {">"}{" "}
-        <Link className="hover:text-[#f6f6f9]" href="/blog">
-          Posts
-        </Link>
-      </div>
+      <ViewCounter slug={slug} blogPage={true} />
+      <PostPageNavigation />
+
       <Component
         components={{
           pre: syntaxHighlighter,
@@ -28,8 +23,6 @@ export default function Post({ slug, frontmatter, code }) {
           // table: ??
         }}
       />
-
-      {/* <SyntaxHighlighter>{exampleCode}</SyntaxHighlighter> */}
     </div>
   );
 }
