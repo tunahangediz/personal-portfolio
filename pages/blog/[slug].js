@@ -1,6 +1,7 @@
 import MDXComponents from "@/components/mdx components/MDXComponents";
 import syntaxHighlighter from "@/components/mdx components/syntaxHighlighter";
 import PostPageNavigation from "@/components/PostPageNavigation";
+import ViewCounter from "@/components/ViewCounter";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 import { getMDXComponent } from "mdx-bundler/client";
 
@@ -11,7 +12,9 @@ export default function Post({ slug, frontmatter, code }) {
 
   return (
     <div className="mt-8">
+      <ViewCounter slug={slug} blogPage={true} />
       <PostPageNavigation />
+
       <Component
         components={{
           pre: syntaxHighlighter,
