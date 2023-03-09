@@ -6,6 +6,8 @@ export const projects = [
       "A react application that shows weekly trending movies and you can create your favorite list.",
     image: "/images/movieapp.png",
     technologies: ["React.js", "Tailwindcss", "firebase"],
+    githubUrl: "https://github.com/tunahangediz/movie-app-react",
+    websiteUrl: "https://movie-app-react-amber.vercel.app/",
   },
   {
     id: 2,
@@ -13,6 +15,8 @@ export const projects = [
     description: "Dijital bussines card creation app, still under development.",
     technologies: ["React.js", "Tailwindcss", "firebase"],
     image: "/images/digital-bussines-card.png",
+    githubUrl: "https://github.com/tunahangediz/digital-business-card",
+    websiteUrl: "digital-business-card-one-tau.vercel.app",
   },
   {
     id: 3,
@@ -21,5 +25,8 @@ export const projects = [
       "A system where users can log in and write comments and replies like mini-reddit",
     image: "/images/reddit.png",
     technologies: ["React.js", "Tailwindcss", "firebase"],
+    githubUrl:
+      "https://github.com/tunahangediz/infinite-comment-and-reply-system",
+    websiteUrl: "infinite-comment-and-reply-system.vercel.app",
   },
 ];

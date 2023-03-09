@@ -1,11 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import "remixicon/fonts/remixicon.css";
+import ViewCounter from "@/components/ViewCounter";
 
 export default function Home() {
   return (
@@ -13,6 +10,8 @@ export default function Home() {
       <AboutMe />
       <Skills />
       <Projects />
+      {/*It's count to visiters to home page but doesn't displaying on screen*/}
+      <ViewCounter slug={"home-page"} blogPage={true} visible={false} />
     </div>
   );
 }
