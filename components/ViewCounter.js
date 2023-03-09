@@ -10,19 +10,22 @@ function ViewCounter({ slug, blogPage = false }) {
   const { data, error } = useSWR(`/api/views/${slug}`, fetcher);
   const views = new Number(data?.total);
 
-  console.log(views);
   useEffect(() => {
+    const visited = localStorage.getItem(slug);
+
     const registerView = () => {
       fetch(`/api/views/${slug}`, {
         method: "POST",
       });
     };
 
-    setTimeout(() => {
-      if (blogPage) {
-        registerView();
-      }
-    }, 100);
+    if (blogPage && visited !== "true") {
+      registerView();
+    }
+
+    return () => {
+      setTimeout(() => (localStorage.setItem(slug, "true"), 200));
+    };
   }, [slug]);
 
   if (!data) return <div>loading...</div>;

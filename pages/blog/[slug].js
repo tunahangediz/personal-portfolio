@@ -5,7 +5,7 @@ import ViewCounter from "@/components/ViewCounter";
 import { getAllPostSlugs, getPostBySlug } from "@/lib/posts";
 import { getMDXComponent } from "mdx-bundler/client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 
 export default function Post({ slug, frontmatter, code }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);
