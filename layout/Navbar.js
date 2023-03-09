@@ -75,8 +75,9 @@ function Navbar() {
       <nav>
         <ul className="flex gap-4">
           <li className="">
-            {" "}
-            <Link href="/blog"> Blog </Link>
+            <Link href="/blog">
+              <p className="text-shadow dark:hover:text-[#6a7bfd]">Blog</p>
+            </Link>
           </li>
           <li>{renderThemeChanger()}</li>
         </ul>
