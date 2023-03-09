@@ -22,7 +22,7 @@ function ViewCounter({ slug, blogPage = false }) {
       if (blogPage) {
         registerView();
       }
-    }, 200);
+    }, 0);
   }, [slug]);
 
   if (!data) return <div>loading...</div>;
