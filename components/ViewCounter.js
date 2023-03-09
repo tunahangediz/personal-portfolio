@@ -18,11 +18,9 @@ function ViewCounter({ slug, blogPage = false }) {
       });
     };
 
-    setTimeout(() => {
-      if (blogPage) {
-        registerView();
-      }
-    }, 0);
+    if (blogPage) {
+      registerView();
+    }
   }, [slug]);
 
   if (!data) return <div>loading...</div>;
