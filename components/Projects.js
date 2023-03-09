@@ -1,6 +1,7 @@
 import { projects } from "@/data/projects";
 import H2 from "@/UI/H2";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Tag from "./Tag";
 
@@ -22,8 +23,27 @@ function Projects() {
                 className="rounded"
                 alt={project.title}
               />
-              <div className=" group-hover:block absolute  bottom-4 left-4">
-                DGASDGSD
+              <div className="absolute bottom-4 left-4 ">
+                <div className="flex items-center text-xs">
+                  {project.githubUrl && (
+                    <Link
+                      href={project.githubUrl}
+                      target="_blank"
+                      className="flex items-center hover:text-2xl transition-all duration-200 py-2 px-4 rounded-lg hover:bg-[#484f8f]  bg-[#eef0ff] dark:bg-[#d3d8fb] text-[#484f8f] font-medium"
+                    >
+                      Github <i class="ri-github-fill ml-1 text-[#484f8f] "></i>
+                    </Link>
+                  )}
+                  {project.websiteUrl && (
+                    <Link
+                      href={project.websiteUrl}
+                      target="_blank"
+                      className="flex items-center ml-4 py-2 px-4  hover:text-2xl transition-all duration-200 rounded-lg hover:bg-[#484f8f]  bg-[#eef0ff] dark:bg-[#d3d8fb] text-[#484f8f] font-medium"
+                    >
+                      View Website <i class="ri-external-link-fill ml-1 "></i>
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
 
