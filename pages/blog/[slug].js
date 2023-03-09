@@ -12,8 +12,7 @@ export default function Post({ slug, frontmatter, code }) {
 
   return (
     <div className="mt-8">
-      <ViewCounter slug={slug} blogPage={true} />
-      <PostPageNavigation />
+      <PostPageNavigation slug={slug} />
 
       <Component
         components={{
