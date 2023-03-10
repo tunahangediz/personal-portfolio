@@ -1,16 +1,6 @@
 export const projects = [
   {
     id: 1,
-    title: "tunahangediz.com",
-    description:
-      "My Personal portfolio website I created using Next.js and tailwindcss",
-    image: "/images/tunahangediz.png",
-    technologies: ["React.js", "Tailwindcss"],
-    githubUrl: "https://github.com/tunahangediz/personal-portfolio",
-    websiteUrl: "https://tunahangediz.com",
-  },
-  {
-    id: 10,
     title: "MovieApp",
     description:
       "A react application that shows weekly trending movies and you can create your favorite list.",
