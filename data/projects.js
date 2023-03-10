@@ -16,7 +16,7 @@ export const projects = [
     technologies: ["React.js", "Tailwindcss", "firebase"],
     image: "/images/digital-bussines-card.png",
     githubUrl: "https://github.com/tunahangediz/digital-business-card",
-    websiteUrl: "digital-business-card-one-tau.vercel.app",
+    websiteUrl: "https://digital-business-card-one-tau.vercel.app",
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export const projects = [
     technologies: ["React.js", "Tailwindcss", "firebase"],
     githubUrl:
       "https://github.com/tunahangediz/infinite-comment-and-reply-system",
-    websiteUrl: "infinite-comment-and-reply-system.vercel.app",
+    websiteUrl: "https://infinite-comment-and-reply-system.vercel.app/",
   },
 ];

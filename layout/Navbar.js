@@ -73,10 +73,12 @@ function Navbar() {
         </Link>
       </div>
       <nav>
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 pt-4 justify-center items-center">
           <li className="">
             <Link href="/blog">
-              <p className="text-shadow dark:hover:text-[#6a7bfd]">Blog</p>
+              <p className=" text-lg font-medium text-shadow dark:hover:text-[#6a7bfd] ">
+                Blog
+              </p>
             </Link>
           </li>
           <li>{renderThemeChanger()}</li>
