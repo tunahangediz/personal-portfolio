@@ -1,6 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
+import Projects from "@/lib/Projects";
 import "remixicon/fonts/remixicon.css";
 import ViewCounter from "@/components/ViewCounter";
 
