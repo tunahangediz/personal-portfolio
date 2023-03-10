@@ -7,7 +7,7 @@ export const projects = [
     image: "/images/tunahangediz.png",
     technologies: ["React.js", "Tailwindcss"],
     githubUrl: "https://github.com/tunahangediz/personal-portfolio",
-    websiteUrl: "https://tunahangediz.com",
+    websiteUrl: "https://tunahangediz.com/",
   },
   {
     id: 10,
