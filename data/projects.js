@@ -33,7 +33,7 @@ export const projects = [
     title: "Reddit style comment and reply system",
     description:
       "A system where users can log in and write comments and replies like mini-reddit",
-    image: "/images/redditt.png",
+    image: "/images/reddit.png",
     technologies: ["React.js", "Tailwindcss", "firebase"],
     githubUrl:
       "https://github.com/tunahangediz/infinite-comment-and-reply-system",

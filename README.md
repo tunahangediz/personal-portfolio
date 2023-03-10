@@ -29,7 +29,7 @@ You can see project [Live Preview ](https://tunahangediz.com)
 
 ## About The Project
 
-[![personal portfolio - tunahangediz.com][product-screenshot]](https://tunahangediz.com)
+[![personal portfolio - tunahangediz.com](public/images/tunahangediz.png)](https://tunahangediz.com)
 My personal portfolio website that I created with Next.js
 
 ### Built With
