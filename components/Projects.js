@@ -3,7 +3,7 @@ import H2 from "@/UI/H2";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Tag from "../components/Tag";
+import Tag from "./Tag";
 
 function Projects() {
   return (
