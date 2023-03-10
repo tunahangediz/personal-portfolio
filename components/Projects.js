@@ -29,7 +29,7 @@ function Projects() {
                     <Link
                       href={project.githubUrl}
                       target="_blank"
-                      className="flex items-center hover:text-2xl transition-all duration-200 py-2 px-4 rounded-lg  bg-[#eef0ff] dark:bg-[#d3d8fb] text-[#484f8f] font-medium"
+                      className="flex items-center hover:text-2xl transition-all duration-200 py-2 px-4 rounded-lg bg-[#eef0ff] dark:bg-[#d3d8fb] text-[#484f8f] font-medium"
                     >
                       Github <i class="ri-github-fill ml-1 text-[#484f8f] "></i>
                     </Link>
