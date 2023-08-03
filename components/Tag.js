@@ -1,6 +1,6 @@
 function Tag({ children }) {
   return (
-    <div className="p-1 px-2 rounded  bg-[#eef0ff] dark:bg-[#d3d8fb] text-[#484f8f]  text-xs sm:text-sm font-medium ">
+    <div className="p-1 px-2 rounded  bg-[#EDF1FF] dark:bg-[#ffffff] text-[#474F8F]   text-xs ">
       {children}
     </div>
   );

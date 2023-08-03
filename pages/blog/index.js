@@ -4,7 +4,6 @@ import H2 from "@/UI/H2";
 import Link from "next/link";
 
 export default function BlogPosts({ allPostsData }) {
-  console.log(allPostsData);
   return (
     <>
       <div className="flex flex-col gap-6 mt-12 ">
