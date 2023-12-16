@@ -14,7 +14,7 @@ export const projects = [
     title: "Metamax Landing Clone",
     description:
       "Metamax.com.tr landing page clone I created using ReactJS and ChakraUI",
-    image: "/images/tunahangediz.png",
+    image: "/images/metamax.png",
     technologies: ["React.js", "TypeScript", "ChakraUI"],
     githubUrl: "https://github.com/tunahangediz/metamax-landing-page-clone",
     websiteUrl: "https://metamax-landing-page-clone.vercel.app/",
